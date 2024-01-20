@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body{
+            background-image: url(emni1.avif);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Payment Form</h1>
+    <h2>User Information </h2>
+    <p><b>Required fields are followed by *</b></p>
+    <p>First Name: *<input type="text" name="fname " required></p>
+    <p>Last Name: *<input type="text" name="lname"></p>
+    <p>E-mail: <input type="email" name="E-mail"></p>
+    <legend>Gender: *
+    <p>
+        Male<input type="radio" name="gender">
+        Female<input type="radio" name="gender">
+    </p>
+    </legend>
+    <p>DOB: *<input type="date" name="DOB"></p>
+    <p>Address: *<textarea rows="5" cols="50" name="Address"></textarea>
+    <p>Pincode: *<input type="number" name="Pincode"></p> 
+    <hr> 
+    <h2>Payment Information</h2>  
+    <p>
+        Card Type:
+        <select name="Card" id="Card">
+            <option value="" id="">--Select Card Type--</option>
+            <option value="Visa" id="Visa">Visa</option>
+            <option value="Rupay" id="Rupay">Rupay</option>
+            <option value="Mastercard" id="Mastercard">Mastercard</option>
+        </select>
+    </p>
+    <p>Card Number: *<input type="number" name="card number"></p>
+    <p>Expire Date: *<input type="date" name="Expire"></p>
+    <p>CVV: *<input type="password" name="CVV"></p>
+    <p>UPI I'D: *<input type="email" name="UPI"></p>
+    <input type="submit" value="Pay Now">
+    <input type="reset" value="Reset">
+</body>
+</html>
